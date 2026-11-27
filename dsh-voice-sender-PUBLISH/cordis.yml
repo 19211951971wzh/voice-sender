@@ -1,0 +1,11 @@
+# 开发模式补丁：从插件目录用 --patch 加载源码，改完热更新（Host 侧改动仍需重启 DSH）。
+# 用法：dsh web --patch ./cordis.yml
+- insert:
+    - id: voice-sender
+      name: './index.js'
+      config:
+        ttsCommand: edge-tts
+        ttsVoice: zh-CN-XiaoxiaoNeural
+        outputDir: ''
+        qqHttpUrl: 'http://127.0.0.1:3000'
+        wechatBridgeUrl: 'http://127.0.0.1:19090/send'

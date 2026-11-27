@@ -1,0 +1,18 @@
+- insert:
+    - id: voice-sender
+      name: dsh-voice-sender
+      config:
+        ttsCommand: edge-tts
+        ttsVoice: zh-CN-XiaoxiaoNeural
+        ttsRate: '+0%'
+        ttsVolume: '+0%'
+        ttsPitch: '+0Hz'
+        ttsTimeoutMs: 30000
+        outputDir: ''
+        keepAudio: true
+        maxTextLength: 1000
+        minIntervalMs: 1000
+        platforms: 'qq,wechat'
+        qqHttpUrl: 'http://127.0.0.1:3000'
+        qqRecordMode: base64
+        wechatBridgeUrl: 'http://127.0.0.1:19090/send'

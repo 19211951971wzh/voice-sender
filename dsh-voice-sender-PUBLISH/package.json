@@ -1,0 +1,40 @@
+{
+  "name": "dsh-voice-sender",
+  "version": "0.1.0",
+  "description": "DSH 语音发送插件：Edge TTS 合成语音，发送到 QQ（OneBot v11）或微信（自定义桥接）。",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "cordis.yml",
+    "cordis.patch.yml",
+    "SKILL.md",
+    "README.md"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.19.0",
+    "dsh": ">=0.2.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "voice",
+    "tts",
+    "edge-tts",
+    "onebot",
+    "qq",
+    "wechat"
+  ]
+}
